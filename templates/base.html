@@ -21,7 +21,29 @@
 </head>
 <body>
 
-    {% block content %}{% endblock content %}
+    <header>
+        <div class="top">
+            <a href="" class="logo"><img src="{% static "img/logo.png" %}" alt=""></a>
+            <ul class="menu">
+                <li>CONHEÇA A STORM</li>
+                <li>PORTIFÓLIO</li>
+                <li>PRODUTOS</li>
+                <li>CLIPPING</li>
+                <li>FAÇA CONTATO</li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <div class="item">
+
+            </div>
+        </div>
+    </header>
+
+    <section>
+        {% block content %}{% endblock content %}
+    </section>
+
 
 </body>
 </html>
