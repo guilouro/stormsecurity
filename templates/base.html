@@ -23,13 +23,13 @@
 
     <header>
         <div class="top">
-            <a href="" class="logo"><img src="{% static "img/logo.png" %}" alt=""></a>
+            <a href="" class="top__logo"><img src="{% static "img/logo.png" %}" alt=""></a>
             <ul class="menu">
-                <li>CONHEÇA A STORM</li>
-                <li>PORTIFÓLIO</li>
-                <li>PRODUTOS</li>
-                <li>CLIPPING</li>
-                <li>FAÇA CONTATO</li>
+                <li><a href="#">CONHEÇA A STORM</a></li>
+                <li><a href="#">PORTIFÓLIO</a></li>
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">CLIPPING</a></li>
+                <li><a href="#">FAÇA CONTATO</a></li>
             </ul>
         </div>
 
@@ -44,6 +44,8 @@
         {% block content %}{% endblock content %}
     </section>
 
-
+    {% if debug %}
+        <script src="//localhost:35729/livereload.js"></script>
+    {% endif %}
 </body>
 </html>

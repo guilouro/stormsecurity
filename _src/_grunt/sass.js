@@ -5,7 +5,7 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: '<%= path.src %>scss',
+            cwd: '<%= path.src %>sass',
             src: ['*.{scss,sass}'],
             dest: '<%= path.dest %>css',
             ext: '.css'
@@ -17,7 +17,7 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: '<%= path.src %>scss',
+            cwd: '<%= path.src %>sass',
             src: ['*.{scss,sass}'],
             dest: '<%= path.dest %>css',
             ext: '.css'
