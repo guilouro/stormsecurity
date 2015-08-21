@@ -561,6 +561,38 @@ th {
   src: local("Roboto Bold"), local("Roboto-Bold"), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bitter-Regular"), url(http://fonts.gstatic.com/s/bitter/v7/Qt2dUzVlMd1bCOcZXl06LPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bitter-Regular"), url(http://fonts.gstatic.com/s/bitter/v7/zfs6I-5mjWQ3nxqccMoL2A.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bitter-Bold"), url(http://fonts.gstatic.com/s/bitter/v7/JGVZEP92dXgoQBG1CnQcfBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bitter-Bold"), url(http://fonts.gstatic.com/s/bitter/v7/evC1haE-MsorTl_A7_uSGVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 .top {
   background: #303031;
   background: -moz-linear-gradient(top, #303031 0%, #0f1011 100%);
@@ -575,7 +607,7 @@ th {
 body {
   background: #282828 url(../img/pattern_body.jpg);
   font-family: "Trebuchet MS", sans serif;
-  color: #cecece;
+  color: #fff;
 }
 
 header {
@@ -623,7 +655,7 @@ section {
 }
 
 a {
-  color: #cecece;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -633,9 +665,20 @@ a {
   width: 48.5%;
   margin-left: 0;
   margin-right: 3%;
+  font-family: serif;
 }
 .news:last-child {
   margin-right: 0;
+}
+.news__title {
+  font-size: 1.2rem;
+}
+.news__subtitle {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.news img {
+  width: 100%;
 }
 
 .control {
@@ -704,6 +747,7 @@ a {
   border-left: none;
 }
 .menu a {
+  color: #cecece;
   padding: 0 17px;
   width: 100%;
   border-left: 1px solid #424242;

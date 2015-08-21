@@ -12,8 +12,7 @@
 body
     background: $default_color url(../img/pattern_body.jpg)
     font-family: "Trebuchet MS", sans serif
-    color: $text_color
-
+    color: #fff
 
 header
     background-image: url(../img/top_bg.png), url(../img/pattern_top.jpg)
@@ -41,7 +40,7 @@ section
 
 
 a
-    color: $text_color
+    color: #fff
     text-decoration: none
 
 
@@ -49,6 +48,17 @@ a
 
 .news
     +j-column(5/10)
+    font-family: serif
+
+    &__title
+        font-size: 1.2rem
+
+    &__subtitle
+        font-size: 0.9rem
+        font-weight: normal
+
+    img
+        width: 100%
 
 .control
     +j-column(1/10)
