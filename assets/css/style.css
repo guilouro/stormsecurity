@@ -742,13 +742,61 @@ footer {
   background: url(../img/pattern_footer.jpg);
   padding: 30px 0;
 }
+footer .citation {
+  width: auto;
+  max-width: 690.2px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 40px;
+}
+footer .form {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+footer .form:last-child {
+  margin-right: 0;
+}
+footer address {
+  font-size: 1rem;
+  font-style: normal;
+}
+footer address p {
+  margin: 5px 0 35px;
+}
 
 form {
   background: url(../img/bg-contato.png) top right no-repeat;
-  padding: 10px 40px;
+  padding: 10px 50px;
 }
-form input {
+form input, form textarea {
+  color: #282828;
   width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  color: #424242;
+}
+form input:-moz-placeholder, form textarea:-moz-placeholder {
+  color: #424242;
+}
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  color: #424242;
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  color: #424242;
+}
+form p {
+  margin: 5px 0;
 }
 
 .menu {
