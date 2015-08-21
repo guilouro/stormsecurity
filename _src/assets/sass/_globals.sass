@@ -11,8 +11,9 @@
 
 body
     background: $default_color url(../img/pattern_body.jpg)
-    font-family: "Trebuchet MS", sans serif
     color: #fff
+    font-family: serif
+
 
 header
     background-image: url(../img/top_bg.png), url(../img/pattern_top.jpg)
@@ -20,6 +21,7 @@ header
     background-position: center center, 0 0
     height: 525px
     padding-top: 10px
+    font-family: "Trebuchet MS", sans serif
 
 
 
@@ -33,10 +35,10 @@ header
         padding: 13px 15px
         display: block
 
+
 section
     +j-center($content)
     padding: 50px 0 20px
-
 
 
 a
@@ -48,7 +50,6 @@ a
 
 .news
     +j-column(5/10)
-    font-family: serif
 
     &__title
         font-size: 1.2rem
@@ -84,5 +85,10 @@ a
             border-radius: 100%
             line-height: 35px
 
+.social_tools
+    border-bottom: 1px solid $second_color
+    padding: 10px 0 15px
+
 .summary
     +j-column(4/10)
+    font-size: 0.9rem

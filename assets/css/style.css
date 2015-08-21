@@ -606,8 +606,8 @@ th {
 
 body {
   background: #282828 url(../img/pattern_body.jpg);
-  font-family: "Trebuchet MS", sans serif;
   color: #fff;
+  font-family: serif;
 }
 
 header {
@@ -616,6 +616,7 @@ header {
   background-position: center center, 0 0;
   height: 525px;
   padding-top: 10px;
+  font-family: "Trebuchet MS", sans serif;
 }
 
 .top {
@@ -665,7 +666,6 @@ a {
   width: 48.5%;
   margin-left: 0;
   margin-right: 3%;
-  font-family: serif;
 }
 .news:last-child {
   margin-right: 0;
@@ -714,12 +714,18 @@ a {
   line-height: 35px;
 }
 
+.social_tools {
+  border-bottom: 1px solid #287ebd;
+  padding: 10px 0 15px;
+}
+
 .summary {
   float: left;
   clear: none;
   width: 38.2%;
   margin-left: 0;
   margin-right: 3%;
+  font-size: 0.9rem;
 }
 .summary:last-child {
   margin-right: 0;
