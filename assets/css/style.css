@@ -680,6 +680,9 @@ a {
 .news img {
   width: 100%;
 }
+.news__legend {
+  font-size: 0.67rem;
+}
 
 .control {
   float: left;
@@ -687,6 +690,7 @@ a {
   width: 7.3%;
   margin-left: 0;
   margin-right: 3%;
+  margin-top: 100px;
 }
 .control:last-child {
   margin-right: 0;
