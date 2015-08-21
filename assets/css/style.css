@@ -411,7 +411,9 @@ body {
 }
 
 header {
-  background: #287ebd url(../img/pattern_top.jpg);
+  background-image: url(../img/top_bg.png), url(../img/pattern_top.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center center, 0 0;
   height: 525px;
   padding-top: 10px;
 }
