@@ -407,6 +407,7 @@ th {
 body {
   background: #282828 url(../img/pattern_body.jpg);
   font-family: "Trebuchet MS", sans serif;
+  color: #cecece;
 }
 
 header {
@@ -468,15 +469,19 @@ section {
   list-style: none;
   float: left;
   padding: 17px 0;
-  margin: 0 17px;
 }
 .menu li:hover {
   border-bottom: 4px solid yellow;
 }
+.menu li:first-child a {
+  border-left: none;
+}
 .menu a {
-  color: #fff;
+  color: #cecece;
   text-decoration: none;
+  padding: 0 17px;
   width: 100%;
+  border-left: 1px solid #424242;
 }
 
 /*# sourceMappingURL=style.css.map */

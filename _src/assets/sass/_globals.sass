@@ -11,6 +11,7 @@
 body
     background: $default_color url(../img/pattern_body.jpg)
     font-family: "Trebuchet MS", sans serif
+    color: $text_color
 
 
 header
@@ -44,12 +45,16 @@ section
         list-style: none
         float: left
         padding: 17px 0
-        margin: 0 17px
 
         &:hover
             border-bottom: 4px solid yellow
 
+        &:first-child a
+            border-left: none
+
     a
-        color: #fff
+        color: $text_color
         text-decoration: none
+        padding: 0 17px
         width: 100%
+        border-left: 1px solid darken($text_color, 55%)
