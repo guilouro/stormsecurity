@@ -738,6 +738,44 @@ a {
   margin-right: 0;
 }
 
+footer {
+  background: url(../img/pattern_footer.jpg);
+  padding: 60px 0;
+}
+footer .citation {
+  width: auto;
+  max-width: 690.2px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 60px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+footer .form {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+footer .form:last-child {
+  margin-right: 0;
+}
+footer address {
+  font-size: 1rem;
+  font-style: normal;
+}
+footer address strong {
+  font-size: 1.1rem;
+}
+footer address p {
+  margin: 5px 0 35px;
+}
+
 .menu {
   *zoom: 1;
   width: 100%;
