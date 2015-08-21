@@ -8,6 +8,7 @@
     background: linear-gradient(to bottom,  #303031 0%,#0f1011 100%) /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303031', endColorstr='#0f1011',GradientType=0 ) /* IE6-9 */
 
+
 body
     background: $default_color url(../img/pattern_body.jpg)
     font-family: "Trebuchet MS", sans serif
@@ -18,9 +19,9 @@ header
     background-image: url(../img/top_bg.png), url(../img/pattern_top.jpg)
     background-repeat: no-repeat, repeat
     background-position: center center, 0 0
-    // background: url(../img/top_bg.png) center center no-repeat, url(../img/top_bg.png) center center no-repeat
     height: 525px
     padding-top: 10px
+
 
 
 .top
@@ -35,29 +36,39 @@ header
 
 section
     +j-center($content)
+    padding: 50px 0 20px
 
 
-.menu
-    +j-cf()
-    width: 100%
-    margin: 0
-    padding: 0
-    font-size: 0.9rem
 
-    li
-        list-style: none
-        float: left
-        padding: 17px 0
+a
+    color: $text_color
+    text-decoration: none
 
-        &:hover
-            border-bottom: 4px solid yellow
 
-        &:first-child a
-            border-left: none
 
-    a
-        color: $text_color
-        text-decoration: none
-        padding: 0 17px
-        width: 100%
-        border-left: 1px solid darken($text_color, 55%)
+
+.news
+    +j-column(5/10)
+
+.control
+    +j-column(1/10)
+    &__box
+        background-color: $dark_text
+        padding: 10px 0
+        border: 1px solid lighten($dark_text, 5%)
+        border-radius: 3px
+        padding: 10px
+        text-align: center
+        font-size: 0.8rem
+
+        a
+            background-color: $second_color
+            width: 35px
+            height: 35px
+            display: block
+            margin: 15px auto 5px
+            border-radius: 100%
+            line-height: 35px
+
+.summary
+    +j-column(4/10)

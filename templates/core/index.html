@@ -1,5 +1,32 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block content %}
-	<h2>App is running... \o/</h2>
+
+    <div class="container">
+        <article class="news">
+            <h2 class="news__title">PEQUENAS EMPRESAS GRANDES NEGÓCIOS</h2>
+            <h3 class="news__subtitle">Ex-hacker brasileiro projeta miniaviões para encontrar carros roubados, vigiar fazendas e gerenciar o trânsito.</h3>
+            <img src="{% static "img/foto.jpg" %}" alt="Pequenas empresas grandes negócios">
+        </article>
+
+        <div class="control">
+            <div class="control__box">
+                <div class="social_tools">
+
+                </div>
+                <a href="" class="control__next">&#10093;</a>
+                <span>Próximo</span>
+                <a href="" class="control__prev">&#10092;</a>
+                <span>Anterior</span>
+            </div>
+        </div>
+
+        <article class="summary">
+            <p><a href="#">O GLOBO BLOGS - INOVAÇÃO</a></p>
+            <p><a href="#" class="summary--active">PEQUENAS EMPRESAS GRANDES NEGÓCIOS</a></p>
+            <p><a href="#">REVISTA GALILEU</a></p>
+        </article>
+    </div>
+
 {% endblock content %}
