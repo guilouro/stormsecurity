@@ -684,6 +684,7 @@ footer .citation {
   margin-bottom: 60px;
   font-size: 1.4rem;
   text-align: center;
+  position: relative;
 }
 footer .form {
   float: left;
@@ -845,10 +846,54 @@ footer address p {
   width: 37.17%;
   margin-left: 0;
   margin-right: 3%;
+  position: relative;
   font-size: 0.9rem;
 }
 .summary:last-child {
   margin-right: 0;
+}
+.summary__list {
+  padding: 15px 25px;
+}
+
+.bar-l-h, .bar-r-h, .bar-r-v, .summary .bar-l-h, .summary .bar-l-v {
+  background-color: #287ebd;
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 2px;
+}
+
+.bar-l-h {
+  top: -10px;
+}
+.bar-r-h {
+  bottom: 0;
+  right: 0;
+}
+.bar-r-v {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  height: 4px;
+  right: -30px;
+  top: 50px;
+}
+
+.summary .bar-l-h {
+  width: 200px;
+  height: 5px;
+  top: 0;
+  left: -20px;
+}
+.summary .bar-l-v {
+  width: 200px;
+  height: 5px;
+  top: 60px;
+  left: -100px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 form {
