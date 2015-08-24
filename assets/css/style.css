@@ -856,7 +856,7 @@ footer address p {
   padding: 15px 25px;
 }
 
-.bar-l-h, .bar-r-h, .bar-r-v, .summary .bar-l-h, .summary .bar-l-v {
+.bar-l-h, .bar-r-h, .bar-r-v, .summary .bar-l-h, .summary .bar-l-v, .image-post .bar-l-h, .image-post .bar-r-v {
   background-color: #287ebd;
   position: absolute;
   display: block;
@@ -894,6 +894,19 @@ footer address p {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.image-post {
+  position: relative;
+}
+.image-post .bar-l-h {
+  top: 0;
+  width: 400px;
+}
+.image-post .bar-r-v {
+  width: 40px;
+  height: 10px;
+  right: -25px;
 }
 
 form {
