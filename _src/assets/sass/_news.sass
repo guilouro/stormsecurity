@@ -1,5 +1,12 @@
+section
+    +breakpoint(mobile)
+        padding: 20px
+
 .news
     +j-column(5/10)
+
+    +breakpoint(mobile)
+        +j-column(10/10)
 
     &__title
         font-size: 1.2rem
@@ -14,9 +21,15 @@
     &__legend
         font-size: 0.67rem
 
+
 .control
     +j-column(1.1/10)
     margin-top: 100px
+
+    +breakpoint(mobile)
+        +j-column(2/10)
+
+
     &__box
         background-color: $dark_text
         padding: 10px

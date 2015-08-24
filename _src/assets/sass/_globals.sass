@@ -50,9 +50,15 @@ footer
     .form
         +j-column(6/12)
 
+        +breakpoint(mobile)
+            +j-column(1/1)
+
+
     address
         font-size: 1rem
         font-style: normal
+        +breakpoint(mobile)
+            text-align: center
         strong
             font-size: 1.1rem
         p

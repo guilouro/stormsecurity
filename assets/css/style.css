@@ -699,9 +699,26 @@ footer .form {
 footer .form:last-child {
   margin-right: 0;
 }
+@media (max-width: 37.5em) {
+  footer .form {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  footer .form:last-child {
+    margin-right: 0;
+  }
+}
 footer address {
   font-size: 1rem;
   font-style: normal;
+}
+@media (max-width: 37.5em) {
+  footer address {
+    text-align: center;
+  }
 }
 footer address strong {
   font-size: 1.1rem;
@@ -728,6 +745,11 @@ footer address p {
   list-style: none;
   float: left;
   padding: 17px 0;
+}
+@media (max-width: 37.5em) {
+  .menu li {
+    float: none;
+  }
 }
 .menu li:hover {
   border-bottom: 4px solid yellow;
@@ -785,6 +807,12 @@ footer address p {
   color: #0f2e41;
 }
 
+@media (max-width: 37.5em) {
+  section {
+    padding: 20px;
+  }
+}
+
 .news {
   float: left;
   clear: none;
@@ -794,6 +822,18 @@ footer address p {
 }
 .news:last-child {
   margin-right: 0;
+}
+@media (max-width: 37.5em) {
+  .news {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .news:last-child {
+    margin-right: 0;
+  }
 }
 .news__title {
   font-size: 1.2rem;
@@ -819,6 +859,18 @@ footer address p {
 }
 .control:last-child {
   margin-right: 0;
+}
+@media (max-width: 37.5em) {
+  .control {
+    float: left;
+    clear: none;
+    width: 17.6%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .control:last-child {
+    margin-right: 0;
+  }
 }
 .control__box {
   background-color: #0f2e41;
