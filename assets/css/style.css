@@ -902,11 +902,19 @@ footer address p {
 .image-post .bar-l-h {
   top: 0;
   width: 400px;
+  height: 3px;
 }
 .image-post .bar-r-v {
-  width: 40px;
-  height: 10px;
-  right: -25px;
+  top: 5px;
+  width: 30px;
+  height: 7px;
+  right: -15px;
+}
+.image-post .bar-r-v:nth-child(3) {
+  width: 300px;
+  top: 210px;
+  right: -150px;
+  height: 3px;
 }
 
 form {
