@@ -851,12 +851,16 @@ footer address p {
   margin-right: 3%;
   position: relative;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 .summary:last-child {
   margin-right: 0;
 }
 .summary__list {
   padding: 15px 25px;
+}
+.summary .active {
+  color: yellow;
 }
 
 .bar-l-h, .bar-r-h, .bar-r-v, .summary .bar-l-h, .summary .bar-l-v, .image-post .bar-l-h, .image-post .bar-r-v {
