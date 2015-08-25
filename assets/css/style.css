@@ -1398,8 +1398,26 @@ footer address p {
 .summary:last-child {
   margin-right: 0;
 }
+.summary__select {
+  width: 100%;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .summary__select {
+    display: block;
+  }
+}
 .summary__list {
   padding: 15px 25px;
+  display: block;
+}
+@media (max-width: 37.5em) {
+  .summary__list {
+    display: none;
+  }
 }
 .summary .active {
   color: yellow;
