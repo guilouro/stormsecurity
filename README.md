@@ -1,20 +1,29 @@
-Django Boilerplate
-=========================== 
+Estrutura
+===========================
 
-This is a simple boilerplate for django projects
+####css/js/img
+```
+/assets/css
+/assets/js
+/assets/img
+```
+### sass/js/lib
+```
+/_src/assets/sass
+/_src/assets/js
+/_src/assets/lib
+```
 
-### Usage
+### template
+```
+/templates
+```
 
-This assumes you have pip and django 1.7 installed (if not, try `$ pip install django`)
+Como usar
+===========================
 
-    $ django-admin.py startproject --template https://github.com/guilouro/django-boilerplate/archive/master.zip project_name .
-    $ pip install -r requirements.txt
-    $ python manage.py migrate
+Assumindo que já esteja com o [virtualenv](https://virtualenv.pypa.io/en/latest/) devidamente criado e ativado.
 
-#### Packages Required
-- **[Unipath]**: An object-oriented approach to file/directory operations
-- **[dj-database-url]**: Allows you to utilize the [12factor](http://www.12factor.net/backing-services) inspired `DATABASE_URL` environment variable to configure your app.
+    $ make run
 
-
-[Unipath]: https://github.com/mikeorr/Unipath
-[dj-database-url]: https://github.com/kennethreitz/dj-database-url
+Acesse [http://127.0.0.1:8000/](http://127.0.0.1:8000/#)
