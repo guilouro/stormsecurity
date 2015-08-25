@@ -8,12 +8,15 @@ header
     background-image: url(../img/top_bg.png), url(../img/pattern_top.jpg)
     background-repeat: no-repeat, repeat
     background-position: center center, 0 0
-    height: 525px
     padding-top: 10px
     font-family: "Trebuchet MS", sans serif
 
     +breakpoint(mobile)
         background: url(../img/pattern_top.jpg)
+
+    +breakpoint(tablet, min)
+        height: 525px
+
 
 
 
@@ -72,4 +75,6 @@ footer
 
 
 
-
+.hidden-mobile
+    +breakpoint(mobile)
+        display: none

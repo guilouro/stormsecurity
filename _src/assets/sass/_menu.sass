@@ -1,17 +1,35 @@
 .menu
     +j-cf()
-    width: 100%
     margin: 0
     padding: 0
     font-size: 0.9rem
+    overflow: hidden
 
     +breakpoint(mobile)
-        +gradient()
+        width: 100%
+        background-color: rgba(darken($default_color, 10%), 0.95)
         width: 70%
         position: absolute
         z-index: 99
         top: 65px
         right: 0
+
+        span
+            float: right
+            color: #aaa
+
+    address
+        font-size: 0.8rem
+
+    .mbl
+        padding: 15px
+        display: none
+
+        +breakpoint(mobile)
+            display: block
+
+        &:last-child
+            +gradient()
 
     li
         list-style: none
@@ -20,9 +38,13 @@
 
         +breakpoint(mobile)
             float: none
+            padding: 10px 0
+            color: #fff
+            border-bottom: 1px solid $default_color
 
-        &:hover
-            border-bottom: 4px solid yellow
+        +breakpoint(tablet, min)
+            &:hover
+                border-bottom: 4px solid yellow
 
         &:first-child a
             border-left: none
