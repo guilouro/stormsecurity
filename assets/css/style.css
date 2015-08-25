@@ -1182,6 +1182,11 @@ footer address p {
   top: 30%;
   width: 100%;
 }
+@media (max-width: 37.5em) {
+  .owl-theme .owl-controls {
+    top: 20%;
+  }
+}
 .owl-theme .owl-controls .owl-buttons div {
   background: transparent;
   position: absolute;
@@ -1263,7 +1268,9 @@ footer address p {
   margin-top: 40px;
 }
 .banner__image img {
-  max-width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 .banner__caption {
   float: left;
