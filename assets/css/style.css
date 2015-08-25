@@ -1222,6 +1222,11 @@ footer address p {
 .owl-carousel, .banner {
   position: relative;
 }
+@media (min-width: 50em) {
+  .owl-carousel .owl-item, .banner .owl-item {
+    height: 460px;
+  }
+}
 
 .owl-theme .owl-controls .owl-page span {
   border: 2px solid #fff;
@@ -1327,6 +1332,12 @@ footer address p {
   right: 5px;
   height: 35px;
   fill: #287ebd;
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .icon-menu {
+    display: block;
+  }
 }
 
 .banner {
@@ -1343,7 +1354,13 @@ footer address p {
 }
 .banner__image {
   float: right;
-  margin-top: 40px;
+  margin-top: 80px;
+}
+@media (max-width: 37.5em) {
+  .banner__image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 .banner__image img {
   max-width: 80%;

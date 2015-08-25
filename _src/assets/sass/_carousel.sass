@@ -28,6 +28,9 @@
 .owl-carousel
     position: relative
 
+    +breakpoint(tablet,min)
+        .owl-item
+            height: 460px
 
 .owl-theme .owl-controls .owl-page span
     border: 2px solid #fff
@@ -39,3 +42,4 @@
 
     .next
         +rotate(180deg)
+

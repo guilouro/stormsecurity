@@ -6,7 +6,11 @@
 
     &__image
         float: right
-        margin-top: 40px
+        margin-top: 80px
+        +breakpoint(mobile)
+            margin-top: 20px
+            margin-bottom: 20px
+
 
         img
             max-width: 80%
