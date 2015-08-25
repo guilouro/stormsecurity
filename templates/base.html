@@ -34,8 +34,17 @@
         </div>
 
         <div class="banner">
+            <div class="item">
+                <div class="banner__caption">
+                    <h1>Telecine Play</h1>
+                    <p>it amet, consectetur adipisicing elit nullam non placerat nunc, nec</p>
+                </div>
+                <div class="banner__image">
+                    <img src="{% static "img/item_banner.png" %}" alt="">
+                </div>
+            </div>
 
-            <div class="banne__item">
+            <div class="item">
                 <div class="banner__caption">
                     <h1>Telecine Play</h1>
                     <p>it amet, consectetur adipisicing elit nullam non placerat nunc, nec</p>
@@ -93,6 +102,8 @@
         </section>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="{% static "js/main.js" %}"></script>
     {% if debug %}
         <script src="//localhost:35729/livereload.js"></script>
     {% endif %}

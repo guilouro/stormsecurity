@@ -1,0 +1,36 @@
+@import "../lib/owlcarousel/owl.carousel"
+@import "../lib/owlcarousel/owl.transitions"
+@import "../lib/owlcarousel/owl.theme"
+
+.owl-pagination
+    display: none
+
+.owl-theme .owl-controls
+    position: absolute
+    z-index: 9999
+    right: 40px
+    bottom: 30px
+
+    .owl-page span
+        width: 15px
+        height: 15px
+
+    .owl-buttons
+        div
+            background: transparent
+
+
+.owl-carousel
+    position: relative
+
+
+.owl-theme .owl-controls .owl-page span
+    border: 2px solid #fff
+    background: #333
+
+
+.banner
+    @extend .owl-carousel
+
+    .next
+        +rotate(180deg)
