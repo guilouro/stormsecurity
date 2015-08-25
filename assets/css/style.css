@@ -1179,16 +1179,19 @@ footer address p {
 
 .owl-theme .owl-controls {
   position: absolute;
-  z-index: 9999;
-  right: 40px;
-  bottom: 30px;
-}
-.owl-theme .owl-controls .owl-page span {
-  width: 15px;
-  height: 15px;
+  top: 30%;
+  width: 100%;
 }
 .owl-theme .owl-controls .owl-buttons div {
   background: transparent;
+  position: absolute;
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-buttons div:first-child {
+  left: 0;
+}
+.owl-theme .owl-controls .owl-buttons div:last-child {
+  right: 0;
 }
 
 .owl-carousel, .banner {

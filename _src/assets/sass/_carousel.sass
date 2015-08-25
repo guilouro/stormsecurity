@@ -7,17 +7,20 @@
 
 .owl-theme .owl-controls
     position: absolute
-    z-index: 9999
-    right: 40px
-    bottom: 30px
-
-    .owl-page span
-        width: 15px
-        height: 15px
+    top: 30%
+    width: 100%
 
     .owl-buttons
         div
             background: transparent
+            position: absolute
+            opacity: 1
+
+            &:first-child
+                left: 0
+
+            &:last-child
+                right: 0
 
 
 .owl-carousel
