@@ -12,10 +12,15 @@ header
     padding-top: 10px
     font-family: "Trebuchet MS", sans serif
 
+    +breakpoint(mobile)
+        background: url(../img/pattern_top.jpg)
+
+
 
 .top
+    +j-cf()
     +j-center($content)
-    @extend %gradient
+    +gradient()
     border-radius: 2px
 
     &__logo

@@ -596,17 +596,6 @@ th {
 /*********************
  * BREAKPOINTS
  ******************** */
-.top {
-  background: #303031;
-  background: -moz-linear-gradient(top, #303031 0%, #0f1011 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #303031), color-stop(100%, #0f1011));
-  background: -webkit-linear-gradient(top, #303031 0%, #0f1011 100%);
-  background: -o-linear-gradient(top, #303031 0%, #0f1011 100%);
-  background: -ms-linear-gradient(top, #303031 0%, #0f1011 100%);
-  background: linear-gradient(to bottom, #303031 0%, #0f1011 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303031', endColorstr='#0f1011',GradientType=0 );
-}
-
 body {
   background: #282828 url(../img/pattern_body.jpg);
   color: #fff;
@@ -621,8 +610,14 @@ header {
   padding-top: 10px;
   font-family: "Trebuchet MS", sans serif;
 }
+@media (max-width: 37.5em) {
+  header {
+    background: url(../img/pattern_top.jpg);
+  }
+}
 
 .top {
+  *zoom: 1;
   width: auto;
   max-width: 986px;
   float: none;
@@ -631,7 +626,22 @@ header {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  background: #303031;
+  background: -moz-linear-gradient(top, #303031 0%, #0f1011 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #303031), color-stop(100%, #0f1011));
+  background: -webkit-linear-gradient(top, #303031 0%, #0f1011 100%);
+  background: -o-linear-gradient(top, #303031 0%, #0f1011 100%);
+  background: -ms-linear-gradient(top, #303031 0%, #0f1011 100%);
+  background: linear-gradient(to bottom, #303031 0%, #0f1011 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303031', endColorstr='#0f1011',GradientType=0 );
   border-radius: 2px;
+}
+.top:before, .top:after {
+  content: '';
+  display: table;
+}
+.top:after {
+  clear: both;
 }
 .top__logo {
   float: left;
@@ -1227,6 +1237,23 @@ footer address p {
 }
 .menu:after {
   clear: both;
+}
+@media (max-width: 37.5em) {
+  .menu {
+    background: #303031;
+    background: -moz-linear-gradient(top, #303031 0%, #0f1011 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #303031), color-stop(100%, #0f1011));
+    background: -webkit-linear-gradient(top, #303031 0%, #0f1011 100%);
+    background: -o-linear-gradient(top, #303031 0%, #0f1011 100%);
+    background: -ms-linear-gradient(top, #303031 0%, #0f1011 100%);
+    background: linear-gradient(to bottom, #303031 0%, #0f1011 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303031', endColorstr='#0f1011',GradientType=0 );
+    width: 70%;
+    position: absolute;
+    z-index: 99;
+    top: 65px;
+    right: 0;
+  }
 }
 .menu li {
   list-style: none;
