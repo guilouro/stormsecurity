@@ -1359,14 +1359,7 @@ footer address p {
 }
 @media (max-width: 37.5em) {
   .control {
-    float: left;
-    clear: none;
-    width: 17.6%;
-    margin-left: 0;
-    margin-right: 3%;
-  }
-  .control:last-child {
-    margin-right: 0;
+    display: none;
   }
 }
 .control__box {
