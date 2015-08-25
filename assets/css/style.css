@@ -1239,7 +1239,6 @@ footer address p {
   margin: 0;
   padding: 0;
   font-size: 0.9rem;
-  overflow: hidden;
 }
 .menu:before, .menu:after {
   content: '';
@@ -1257,6 +1256,13 @@ footer address p {
     z-index: 99;
     top: 65px;
     right: 0;
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+  }
+  .menu.open {
+    max-height: 300px;
+    transition: max-height 0.25s ease-out;
   }
   .menu span {
     float: right;
@@ -1311,6 +1317,16 @@ footer address p {
   padding: 0 17px;
   width: 100%;
   border-left: 1px solid #424242;
+}
+
+.icon-menu {
+  width: 3rem;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  height: 35px;
+  fill: #287ebd;
 }
 
 .banner {

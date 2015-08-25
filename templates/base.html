@@ -24,6 +24,20 @@
     <header>
         <div class="top">
             <a href="" class="top__logo"><img src="{% static "img/logo.png" %}" alt=""></a>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none" version="1.1">
+                <defs>
+                    <symbol id="icon-menu" viewBox="0 0 1024 1024"><path class="path1" d="M128 213.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 725.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 469.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5z"></path></symbol>
+                    <symbol id="icon-close" viewBox="0 0 805 1024"><path class="path1" d="M741.714 755.429q0 22.857-16 38.857l-77.714 77.714q-16 16-38.857 16t-38.857-16l-168-168-168 168q-16 16-38.857 16t-38.857-16l-77.714-77.714q-16-16-16-38.857t16-38.857l168-168-168-168q-16-16-16-38.857t16-38.857l77.714-77.714q16-16 38.857-16t38.857 16l168 168 168-168q16-16 38.857-16t38.857 16l77.714 77.714q16 16 16 38.857t-16 38.857l-168 168 168 168q16 16 16 38.857z"></path></symbol>
+                </defs>
+            </svg>
+            <a id="menu-bar">
+                <svg id="open" class="icon-menu" style="">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
+                </svg>
+                <svg id="close" class="icon-menu" style="display: none;">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+                </svg>
+            </a>
             <ul class="menu">
                 <li><a href="#">CONHEÇA A STORM</a></li>
                 <li><a href="#">PORTIFÓLIO</a></li>

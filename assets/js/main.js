@@ -28,6 +28,12 @@ $(document).ready(function(){
         populate_select();
     });
 
+    $("#menu-bar").click(function(){
+        $('.menu').toggleClass('open');
+        $('#open').toggle('hide');
+        $('#close').toggle('show');
+    });
+
 });
 },{}],2:[function(require,module,exports){
 /*
