@@ -22,7 +22,7 @@ Estrutura
 Como usar
 ===========================
 
-Assumindo que já esteja com o [virtualenv](https://virtualenv.pypa.io/en/latest/) devidamente criado e ativado.
+Assumindo que já esteja com o [virtualenv](https://virtualenv.pypa.io/en/latest/) ou virtualenvwrapper devidamente criado e ativado.
 
     $ make run
 
